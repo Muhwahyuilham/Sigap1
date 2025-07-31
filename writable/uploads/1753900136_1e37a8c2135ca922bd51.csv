@@ -1,0 +1,122 @@
+-- phpMyAdmin SQL Dump
+-- version 5.2.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Jul 30, 2025 at 06:26 PM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `db_sigap`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_order`
+--
+
+CREATE TABLE `tb_order` (
+  `id` int(5) UNSIGNED NOT NULL,
+  `no_order` varchar(20) NOT NULL,
+  `username` varchar(50) NOT NULL,
+  `judul` varchar(255) DEFAULT NULL,
+  `jenis` varchar(100) NOT NULL,
+  `kategori` varchar(100) NOT NULL,
+  `type` int(10) UNSIGNED DEFAULT NULL,
+  `detail` text NOT NULL,
+  `status` varchar(50) NOT NULL,
+  `jenis_id` int(10) UNSIGNED NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `file_name` varchar(255) DEFAULT NULL,
+  `file_type` varchar(100) DEFAULT NULL,
+  `file_size` int(11) DEFAULT NULL,
+  `file_path` varchar(255) DEFAULT NULL,
+  `priority` int(3) DEFAULT 1,
+  `deadline` date DEFAULT NULL,
+  `tanggal_input` datetime DEFAULT NULL,
+  `tanggal_ubah` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `tb_order`
+--
+
+INSERT INTO `tb_order` (`id`, `no_order`, `username`, `judul`, `jenis`, `kategori`, `type`, `detail`, `status`, `jenis_id`, `email`, `file_name`, `file_type`, `file_size`, `file_path`, `priority`, `deadline`, `tanggal_input`, `tanggal_ubah`) VALUES
+(48, 'ORD-1753020663', 'wayu', 'Permohonan Server, Aplikasi, Calotation dan Domain', 'Layanan Permohonan', '', NULL, 'dd', 'ditolak', 0, 'wayyu@gmail.com', '1753020663_db85a64e568a09eede5c.pdf', 'application/pdf', 272226, 'C:\\xampp\\htdocs\\sigap1\\writable\\uploads/1753020663_db85a64e568a09eede5c.pdf', 4, '2025-07-21', '2025-07-20 14:11:03', '2025-07-20 14:14:30'),
+(49, 'ORD-1753020863', 'wayu', 'Permohonan Server, Aplikasi, Calotation dan Domain', 'Layanan Permohonan', '', NULL, 'wqwjidsjxc', 'ditolak', 0, 'wayyu@gmail.com', '1753020863_429c03ea46f3bd300f83.png', 'image/png', 38432, 'C:\\xampp\\htdocs\\sigap1\\writable\\uploads/1753020863_429c03ea46f3bd300f83.png', 4, '2025-07-21', '2025-07-20 14:14:23', '2025-07-20 14:14:31'),
+(50, 'ORD-1753021330', 'wayu', 'Permohonan Server, Aplikasi, Calotation dan Domain', 'Layanan Permohonan', '', NULL, 'shuxjn', 'done', 0, 'wayyu@gmail.com', '1753021330_52a4dc0e9c403d9cecb3.png', 'image/png', 38432, 'C:\\xampp\\htdocs\\sigap1\\writable\\uploads/1753021330_52a4dc0e9c403d9cecb3.png', 10, '2025-07-21', '2025-07-20 14:22:10', '2025-07-21 11:34:15'),
+(51, 'ORD-1753021640', 'wayu', 'Permohonan Peminjaman Ruangan', 'Layanan Permohonan', '', NULL, 'akjsbnxjk, n', 'done', 0, 'wayyu@gmail.com', '1753021640_4d73a12f88cce106d4db.png', 'image/png', 38432, 'C:\\xampp\\htdocs\\sigap1\\writable\\uploads/1753021640_4d73a12f88cce106d4db.png', 4, '2025-07-21', '2025-07-20 14:27:20', '2025-07-21 11:40:31'),
+(52, 'ORD-1753021679', 'wayu', 'Gangguan VPN Tidak Terhubung, Internet Lambat, dan Bandwidth Error', 'Layanan Gangguan', '', NULL, 'telasomu', 'ditolak', 0, 'wayyu@gmail.com', '1753021679_611114938d78c5dd975f.pdf', 'application/pdf', 272226, 'C:\\xampp\\htdocs\\sigap1\\writable\\uploads/1753021679_611114938d78c5dd975f.pdf', 6, '2025-07-21', '2025-07-20 14:27:59', '2025-07-20 14:33:33'),
+(53, 'ORD-1753021730', 'wayu', 'Permohonan Server, Aplikasi, Calotation dan Domain', 'Layanan Permohonan', '', NULL, 's', 'ditolak', 0, 'wayyu@gmail.com', '1753021730_3619978491eebbd75aa8.png', 'image/png', 38432, 'C:\\xampp\\htdocs\\sigap1\\writable\\uploads/1753021730_3619978491eebbd75aa8.png', 9, '2025-07-23', '2025-07-20 14:28:50', '2025-07-20 14:33:35'),
+(54, 'ORD-1753021785', 'wayu', 'Permohonan Jaringan', 'Layanan Permohonan', '', NULL, 'sd', 'done', 0, 'wayyu@gmail.com', '1753021785_e1cedd011f95137f92ab.pdf', 'application/pdf', 272226, 'C:\\xampp\\htdocs\\sigap1\\writable\\uploads/1753021785_e1cedd011f95137f92ab.pdf', 7, '2025-07-22', '2025-07-20 14:29:45', '2025-07-21 11:40:25'),
+(55, 'ORD-1753022035', 'wayu', 'Permohonan Peminjaman Ruangan', 'Layanan Permohonan', '', NULL, 'aa', 'ditolak', 0, 'wayyu@gmail.com', '1753022035_a7b10731acfa9d8de84a.png', 'image/png', 38432, 'C:\\xampp\\htdocs\\sigap1\\writable\\uploads/1753022035_a7b10731acfa9d8de84a.png', 1, '2025-07-25', '2025-07-20 14:33:55', '2025-07-21 11:11:51'),
+(56, 'ORD-1753096349', 'wayu', 'Permohonan Pembuatan dan Kapasitas Akun dan Email', 'Layanan Permohonan', '', NULL, 'cukurukuk', 'ditolak', 0, 'wayyu@gmail.com', '1753096349_8c3f1d35eba40ab56954.png', 'image/png', 44647, 'C:\\xampp\\htdocs\\sigap1\\writable\\uploads/1753096349_8c3f1d35eba40ab56954.png', 6, '2025-07-23', '2025-07-21 11:12:29', '2025-07-21 11:13:07'),
+(57, 'ORD-1753198040', 'wayu', 'Gangguan VPN Tidak Terhubung, Internet Lambat, dan Bandwidth Error', 'Layanan Gangguan', '', NULL, 'wkd,smd', 'process', 0, 'wayyu@gmail.com', '1753198040_c9bb205b6dbb58092046.docx', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 1347896, 'C:\\xampp\\htdocs\\sigap1\\writable\\uploads/1753198040_c9bb205b6dbb58092046.docx', 6, '2025-07-24', '2025-07-22 15:27:20', '2025-07-23 11:30:50'),
+(58, 'ORD-1753276944', 'caca', 'Gangguan VPN Tidak Terhubung, Internet Lambat, dan Bandwidth Error', 'Layanan Gangguan', '', NULL, 'fgh', 'ditolak', 0, 'caca@gmail.com', '1753276944_828773eb899309db6a97.docx', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 1342641, 'C:\\xampp\\htdocs\\sigap1\\writable\\uploads/1753276944_828773eb899309db6a97.docx', 3, '2025-07-28', '2025-07-23 13:22:24', '2025-07-23 15:51:57'),
+(59, 'ORD-1753303065', 'caca', 'Gangguan VPN Tidak Terhubung, Internet Lambat, dan Bandwidth Error', 'Layanan Gangguan', '', NULL, 'contoh', 'ditolak', 0, 'caca@gmail.com', '1753303065_db3b6abdbdf8b840fa31.pdf', 'application/pdf', 1085641, 'C:\\xampp\\htdocs\\sigap1\\writable\\uploads/1753303065_db3b6abdbdf8b840fa31.pdf', 3, '2025-07-30', '2025-07-23 20:37:45', '2025-07-24 06:55:06'),
+(60, 'ORD-1753303205', 'wayu', 'Permohonan Pembuatan dan Kapasitas Akun dan Email', 'Layanan Permohonan', '', NULL, 'contoh 2', 'ditolak', 0, 'wayyu@gmail.com', '1753303205_a73473f3c2dae25c3960.png', 'image/png', 59320, 'C:\\xampp\\htdocs\\sigap1\\writable\\uploads/1753303205_a73473f3c2dae25c3960.png', 3, '2025-07-30', '2025-07-23 20:40:05', '2025-07-24 06:55:09'),
+(61, 'ORD-1753303271', 'user', 'Permohonan Server, Aplikasi, Calotation dan Domain', 'Layanan Permohonan', '', NULL, 'contoh 3', 'ditolak', 0, 'user@gmail.com', '1753303271_b85bfd144753a2397542.png', 'image/png', 32795, 'C:\\xampp\\htdocs\\sigap1\\writable\\uploads/1753303271_b85bfd144753a2397542.png', 7, '2025-07-26', '2025-07-23 20:41:11', '2025-07-24 06:55:13'),
+(62, 'ORD-1753303476', 'wayu', 'Permohonan Pointing dan Integrasi', 'Layanan Permohonan', '', NULL, 'contoh3', 'ditolak', 0, 'wayyu@gmail.com', '1753303476_aec7ae673d2f17c41afd.png', 'image/png', 41125, 'C:\\xampp\\htdocs\\sigap1\\writable\\uploads/1753303476_aec7ae673d2f17c41afd.png', 6, '2025-07-27', '2025-07-23 20:44:36', '2025-07-24 06:55:16'),
+(63, 'ORD-1753340010', 'caca', 'Permohonan Server, Aplikasi, Calotation dan Domain', 'Layanan Permohonan', '', NULL, 'seceoastnya', 'ditolak', 0, 'caca@gmail.com', '1753340010_5b6a84434c68451e1f05.png', 'image/png', 32795, 'C:\\xampp\\htdocs\\sigap1\\writable\\uploads/1753340010_5b6a84434c68451e1f05.png', 7, '2025-07-27', '2025-07-24 06:53:30', '2025-07-24 06:55:19'),
+(64, 'ORD-1753340150', 'caca', 'Permohonan Server, Aplikasi, Calotation dan Domain', 'Layanan Permohonan', '', NULL, 'cepat ya', 'ditolak', 0, 'caca@gmail.com', '1753340150_09db260649640fb654f9.png', 'image/png', 47553, 'C:\\xampp\\htdocs\\sigap1\\writable\\uploads/1753340150_09db260649640fb654f9.png', 7, '2025-07-27', '2025-07-24 06:55:50', '2025-07-24 07:06:00'),
+(65, 'ORD-1753340168', 'caca', 'Gangguan VPN Tidak Terhubung, Internet Lambat, dan Bandwidth Error', 'Layanan Gangguan', '', NULL, 'cepat', 'ditolak', 0, 'caca@gmail.com', '1753340168_b28bc68cf3ffa70aea43.png', 'image/png', 47553, 'C:\\xampp\\htdocs\\sigap1\\writable\\uploads/1753340168_b28bc68cf3ffa70aea43.png', 3, '2025-07-31', '2025-07-24 06:56:08', '2025-07-24 07:06:03'),
+(66, 'ORD-1753340188', 'caca', 'Permohonan Pointing dan Integrasi', 'Layanan Permohonan', '', NULL, 'segera', 'ditolak', 0, 'caca@gmail.com', '1753340188_1c44e0615fbf73841855.pdf', 'application/pdf', 1211456, 'C:\\xampp\\htdocs\\sigap1\\writable\\uploads/1753340188_1c44e0615fbf73841855.pdf', 6, '2025-07-28', '2025-07-24 06:56:28', '2025-07-24 07:06:06'),
+(67, 'ORD-1753340403', 'wayu', 'Permohonan Upload dan Publikasi', 'Layanan Permohonan', '', NULL, 'cek', 'ditolak', 0, 'wayyu@gmail.com', '1753340403_16bc43b8a874c904aa81.png', 'image/png', 59320, 'C:\\xampp\\htdocs\\sigap1\\writable\\uploads/1753340403_16bc43b8a874c904aa81.png', 5, '2025-07-29', '2025-07-24 07:00:03', '2025-07-24 07:06:11'),
+(68, 'ORD-1753340809', 'wayu', 'Permohonan Kunjungan Data Center dan Server', 'Layanan Permohonan', '', NULL, 'cek', 'process', 0, 'wayyu@gmail.com', '1753340809_d2576e2079d8b409e115.docx', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 1342641, 'C:\\xampp\\htdocs\\sigap1\\writable\\uploads/1753340809_d2576e2079d8b409e115.docx', 7, '2025-07-27', '2025-07-24 07:06:49', '2025-07-24 07:19:12'),
+(69, 'ORD-1753340823', 'wayu', 'Permohonan Server, Aplikasi, Calotation dan Domain', 'Layanan Permohonan', '', NULL, 'cek', 'process', 0, 'wayyu@gmail.com', '1753340823_68865a582fdd94c47e22.png', 'image/png', 59320, 'C:\\xampp\\htdocs\\sigap1\\writable\\uploads/1753340823_68865a582fdd94c47e22.png', 7, '2025-07-27', '2025-07-24 07:07:03', '2025-07-24 07:19:15'),
+(70, 'ORD-1753340880', 'wayu', 'Permasalahan Akun dan Email', 'Layanan Gangguan', '', NULL, 'm', 'process', 0, 'wayyu@gmail.com', '1753340880_fd70ab850925d4066c4c.png', 'image/png', 47553, 'C:\\xampp\\htdocs\\sigap1\\writable\\uploads/1753340880_fd70ab850925d4066c4c.png', 1, '2025-08-02', '2025-07-24 07:08:00', '2025-07-24 07:19:18'),
+(71, 'ORD-1753340932', 'wayu', 'Permohonan Server, Aplikasi, Calotation dan Domain', 'Layanan Permohonan', '', NULL, 'klj,', 'process', 0, 'wayyu@gmail.com', '1753340932_0b31c52752c2c1d5f1f8.png', 'image/png', 47553, 'C:\\xampp\\htdocs\\sigap1\\writable\\uploads/1753340932_0b31c52752c2c1d5f1f8.png', 7, '2025-07-27', '2025-07-24 07:08:52', '2025-07-24 07:19:21'),
+(72, 'ORD-1753341386', 'user', 'Permohonan Server, Aplikasi, Calotation dan Domain', 'Layanan Permohonan', '', NULL, 'p', 'process', 0, 'user@gmail.com', '1753341386_5376ec053926d60a7851.pdf', 'application/pdf', 1085641, 'C:\\xampp\\htdocs\\sigap1\\writable\\uploads/1753341386_5376ec053926d60a7851.pdf', 7, '2025-07-27', '2025-07-24 07:16:26', '2025-07-24 07:19:23'),
+(73, 'ORD-1753341621', 'caca', 'Permohonan Peminjaman Ruangan', 'Layanan Permohonan', '', NULL, 'qjlaxn', 'process', 0, 'caca@gmail.com', '1753341621_7a957db1f574a8e109ee.pdf', 'application/pdf', 1085641, 'C:\\xampp\\htdocs\\sigap1\\writable\\uploads/1753341621_7a957db1f574a8e109ee.pdf', 1, '2025-08-02', '2025-07-24 07:20:21', '2025-07-24 18:03:51'),
+(74, 'ORD-1753341635', 'caca', 'Permohonan Server, Aplikasi, Calotation dan Domain', 'Layanan Permohonan', '', NULL, 'qwelksd mx,c  ', 'process', 0, 'caca@gmail.com', '1753341635_fdfca731412e16f5a69a.pdf', 'application/pdf', 1211456, 'C:\\xampp\\htdocs\\sigap1\\writable\\uploads/1753341635_fdfca731412e16f5a69a.pdf', 7, '2025-07-27', '2025-07-24 07:20:35', '2025-07-24 18:02:53'),
+(75, 'ORD-1753342332', 'wayu', 'Permohonan Kunjungan Data Center dan Server', 'Layanan Permohonan', '', NULL, 'jwjeldbnljwns d', 'pending', 0, 'wayyu@gmail.com', '1753342332_92a72fba6a504c722dd9.pdf', 'application/pdf', 1085641, 'C:\\xampp\\htdocs\\sigap1\\writable\\uploads/1753342332_92a72fba6a504c722dd9.pdf', 7, '2025-07-27', '2025-07-24 07:32:12', '2025-07-24 07:32:12');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `tb_order`
+--
+ALTER TABLE `tb_order`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `fk_jenis_id` (`jenis_id`),
+  ADD KEY `fk_jenis_type` (`type`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `tb_order`
+--
+ALTER TABLE `tb_order`
+  MODIFY `id` int(5) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=76;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `tb_order`
+--
+ALTER TABLE `tb_order`
+  ADD CONSTRAINT `fk_jenis_type` FOREIGN KEY (`type`) REFERENCES `jenis` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `fk_tb_order_jenis` FOREIGN KEY (`jenis_id`) REFERENCES `jenis` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

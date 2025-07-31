@@ -1,0 +1,14 @@
+CRITICAL - 2025-04-17 07:24:35 --> CodeIgniter\Files\Exceptions\FileNotFoundException: File not found: "C:\xampp\htdocs\sigap\writable\uploads/1737368896_310d3b295a08771a99a4.pdf"
+[Method: GET, Route: admin/order/download/2]
+in SYSTEMPATH\Files\File.php on line 51.
+ 1 SYSTEMPATH\Files\File.php(51): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('C:\\xampp\\htdocs\\sigap\\writable\\uploads/1737368896_310d3b295a08771a99a4.pdf')
+ 2 SYSTEMPATH\HTTP\DownloadResponse.php(106): CodeIgniter\Files\File->__construct('C:\\xampp\\htdocs\\sigap\\writable\\uploads/1737368896_310d3b295a08771a99a4.pdf', true)
+ 3 SYSTEMPATH\HTTP\ResponseTrait.php(739): CodeIgniter\HTTP\DownloadResponse->setFilePath('C:\\xampp\\htdocs\\sigap\\writable\\uploads/1737368896_310d3b295a08771a99a4.pdf')
+ 4 APPPATH\Controllers\Admin\OrderController.php(102): CodeIgniter\HTTP\Response->download('1737368896_310d3b295a08771a99a4.pdf', null)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\OrderController->download('2')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\OrderController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\sigap1\\public\\index.php')

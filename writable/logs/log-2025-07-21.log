@@ -1,0 +1,240 @@
+CRITICAL - 2025-07-21 11:13:22 --> ErrorException: Undefined property: stdClass::$judul_order
+[Method: GET, Route: superadmin/orders/incoming]
+in APPPATH\Views\superadmin\order\incoming.php on line 48.
+ 1 APPPATH\Views\superadmin\order\incoming.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$judul_order', 'C:\\xampp\\htdocs\\sigap1\\app\\Views\\superadmin\\order\\incoming.php', 48)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sigap1\\app\\Views\\superadmin\\order\\incoming.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('superadmin/order/incoming', [], true)
+ 5 APPPATH\Controllers\SuperAdmin\OrderController.php(62): view('superadmin/order/incoming', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Superadmin\OrderController->incoming()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Superadmin\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\sigap1\\public\\index.php')
+CRITICAL - 2025-07-21 11:15:44 --> ErrorException: Undefined property: stdClass::$judul_order
+[Method: GET, Route: superadmin/orders/incoming]
+in APPPATH\Views\superadmin\order\incoming.php on line 48.
+ 1 APPPATH\Views\superadmin\order\incoming.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$judul_order', 'C:\\xampp\\htdocs\\sigap1\\app\\Views\\superadmin\\order\\incoming.php', 48)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sigap1\\app\\Views\\superadmin\\order\\incoming.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('superadmin/order/incoming', [], true)
+ 5 APPPATH\Controllers\SuperAdmin\OrderController.php(62): view('superadmin/order/incoming', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Superadmin\OrderController->incoming()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Superadmin\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\sigap1\\public\\index.php')
+CRITICAL - 2025-07-21 11:18:26 --> ErrorException: Undefined property: stdClass::$judul_order
+[Method: GET, Route: superadmin/orders/incoming]
+in APPPATH\Views\superadmin\order\incoming.php on line 48.
+ 1 APPPATH\Views\superadmin\order\incoming.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$judul_order', 'C:\\xampp\\htdocs\\sigap1\\app\\Views\\superadmin\\order\\incoming.php', 48)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sigap1\\app\\Views\\superadmin\\order\\incoming.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('superadmin/order/incoming', [], true)
+ 5 APPPATH\Controllers\SuperAdmin\OrderController.php(62): view('superadmin/order/incoming', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Superadmin\OrderController->incoming()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Superadmin\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\sigap1\\public\\index.php')
+CRITICAL - 2025-07-21 11:18:27 --> ErrorException: Undefined property: stdClass::$judul_order
+[Method: GET, Route: superadmin/orders/incoming]
+in APPPATH\Views\superadmin\order\incoming.php on line 48.
+ 1 APPPATH\Views\superadmin\order\incoming.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$judul_order', 'C:\\xampp\\htdocs\\sigap1\\app\\Views\\superadmin\\order\\incoming.php', 48)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sigap1\\app\\Views\\superadmin\\order\\incoming.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('superadmin/order/incoming', [], true)
+ 5 APPPATH\Controllers\SuperAdmin\OrderController.php(62): view('superadmin/order/incoming', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Superadmin\OrderController->incoming()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Superadmin\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\sigap1\\public\\index.php')
+CRITICAL - 2025-07-21 11:18:30 --> ErrorException: Undefined property: stdClass::$judul_order
+[Method: GET, Route: superadmin/orders/incoming]
+in APPPATH\Views\superadmin\order\incoming.php on line 48.
+ 1 APPPATH\Views\superadmin\order\incoming.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$judul_order', 'C:\\xampp\\htdocs\\sigap1\\app\\Views\\superadmin\\order\\incoming.php', 48)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sigap1\\app\\Views\\superadmin\\order\\incoming.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('superadmin/order/incoming', [], true)
+ 5 APPPATH\Controllers\SuperAdmin\OrderController.php(62): view('superadmin/order/incoming', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Superadmin\OrderController->incoming()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Superadmin\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\sigap1\\public\\index.php')
+CRITICAL - 2025-07-21 11:20:33 --> ErrorException: Undefined property: stdClass::$judul_order
+[Method: GET, Route: superadmin/orders/incoming]
+in APPPATH\Views\superadmin\order\incoming.php on line 49.
+ 1 APPPATH\Views\superadmin\order\incoming.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$judul_order', 'C:\\xampp\\htdocs\\sigap1\\app\\Views\\superadmin\\order\\incoming.php', 49)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sigap1\\app\\Views\\superadmin\\order\\incoming.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('superadmin/order/incoming', [], true)
+ 5 APPPATH\Controllers\SuperAdmin\OrderController.php(62): view('superadmin/order/incoming', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Superadmin\OrderController->incoming()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Superadmin\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\sigap1\\public\\index.php')
+CRITICAL - 2025-07-21 11:20:33 --> ErrorException: Undefined property: stdClass::$judul_order
+[Method: GET, Route: superadmin/orders/incoming]
+in APPPATH\Views\superadmin\order\incoming.php on line 49.
+ 1 APPPATH\Views\superadmin\order\incoming.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$judul_order', 'C:\\xampp\\htdocs\\sigap1\\app\\Views\\superadmin\\order\\incoming.php', 49)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sigap1\\app\\Views\\superadmin\\order\\incoming.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('superadmin/order/incoming', [], true)
+ 5 APPPATH\Controllers\SuperAdmin\OrderController.php(62): view('superadmin/order/incoming', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Superadmin\OrderController->incoming()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Superadmin\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\sigap1\\public\\index.php')
+CRITICAL - 2025-07-21 11:20:33 --> ErrorException: Undefined property: stdClass::$judul_order
+[Method: GET, Route: superadmin/orders/incoming]
+in APPPATH\Views\superadmin\order\incoming.php on line 49.
+ 1 APPPATH\Views\superadmin\order\incoming.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$judul_order', 'C:\\xampp\\htdocs\\sigap1\\app\\Views\\superadmin\\order\\incoming.php', 49)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sigap1\\app\\Views\\superadmin\\order\\incoming.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('superadmin/order/incoming', [], true)
+ 5 APPPATH\Controllers\SuperAdmin\OrderController.php(62): view('superadmin/order/incoming', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Superadmin\OrderController->incoming()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Superadmin\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\sigap1\\public\\index.php')
+CRITICAL - 2025-07-21 11:20:34 --> ErrorException: Undefined property: stdClass::$judul_order
+[Method: GET, Route: superadmin/orders/incoming]
+in APPPATH\Views\superadmin\order\incoming.php on line 49.
+ 1 APPPATH\Views\superadmin\order\incoming.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$judul_order', 'C:\\xampp\\htdocs\\sigap1\\app\\Views\\superadmin\\order\\incoming.php', 49)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sigap1\\app\\Views\\superadmin\\order\\incoming.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('superadmin/order/incoming', [], true)
+ 5 APPPATH\Controllers\SuperAdmin\OrderController.php(62): view('superadmin/order/incoming', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Superadmin\OrderController->incoming()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Superadmin\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\sigap1\\public\\index.php')
+CRITICAL - 2025-07-21 11:20:36 --> ErrorException: Undefined property: stdClass::$judul_order
+[Method: GET, Route: superadmin/orders/incoming]
+in APPPATH\Views\superadmin\order\incoming.php on line 49.
+ 1 APPPATH\Views\superadmin\order\incoming.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$judul_order', 'C:\\xampp\\htdocs\\sigap1\\app\\Views\\superadmin\\order\\incoming.php', 49)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sigap1\\app\\Views\\superadmin\\order\\incoming.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('superadmin/order/incoming', [], true)
+ 5 APPPATH\Controllers\SuperAdmin\OrderController.php(62): view('superadmin/order/incoming', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Superadmin\OrderController->incoming()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Superadmin\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\sigap1\\public\\index.php')
+CRITICAL - 2025-07-21 11:23:45 --> ErrorException: Undefined property: stdClass::$judul_order
+[Method: GET, Route: superadmin/orders/incoming]
+in APPPATH\Views\superadmin\order\incoming.php on line 49.
+ 1 APPPATH\Views\superadmin\order\incoming.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$judul_order', 'C:\\xampp\\htdocs\\sigap1\\app\\Views\\superadmin\\order\\incoming.php', 49)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sigap1\\app\\Views\\superadmin\\order\\incoming.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('superadmin/order/incoming', [], true)
+ 5 APPPATH\Controllers\SuperAdmin\OrderController.php(62): view('superadmin/order/incoming', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Superadmin\OrderController->incoming()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Superadmin\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\sigap1\\public\\index.php')
+CRITICAL - 2025-07-21 11:29:43 --> ErrorException: Undefined property: stdClass::$judul_order
+[Method: GET, Route: superadmin/orders/]
+in APPPATH\Views\superadmin\order\index.php on line 45.
+ 1 APPPATH\Views\superadmin\order\index.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$judul_order', 'C:\\xampp\\htdocs\\sigap1\\app\\Views\\superadmin\\order\\index.php', 45)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sigap1\\app\\Views\\superadmin\\order\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('superadmin/order/index', [], true)
+ 5 APPPATH\Controllers\SuperAdmin\OrderController.php(28): view('superadmin/order/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Superadmin\OrderController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Superadmin\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\sigap1\\public\\index.php')
+CRITICAL - 2025-07-21 11:29:45 --> ErrorException: Undefined property: stdClass::$judul_order
+[Method: GET, Route: superadmin/orders/incoming]
+in APPPATH\Views\superadmin\order\incoming.php on line 49.
+ 1 APPPATH\Views\superadmin\order\incoming.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$judul_order', 'C:\\xampp\\htdocs\\sigap1\\app\\Views\\superadmin\\order\\incoming.php', 49)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sigap1\\app\\Views\\superadmin\\order\\incoming.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('superadmin/order/incoming', [], true)
+ 5 APPPATH\Controllers\SuperAdmin\OrderController.php(62): view('superadmin/order/incoming', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Superadmin\OrderController->incoming()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Superadmin\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\sigap1\\public\\index.php')
+CRITICAL - 2025-07-21 11:30:42 --> ErrorException: Undefined property: stdClass::$judul_order
+[Method: GET, Route: superadmin/orders/incoming]
+in APPPATH\Views\superadmin\order\incoming.php on line 49.
+ 1 APPPATH\Views\superadmin\order\incoming.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$judul_order', 'C:\\xampp\\htdocs\\sigap1\\app\\Views\\superadmin\\order\\incoming.php', 49)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sigap1\\app\\Views\\superadmin\\order\\incoming.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('superadmin/order/incoming', [], true)
+ 5 APPPATH\Controllers\SuperAdmin\OrderController.php(62): view('superadmin/order/incoming', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Superadmin\OrderController->incoming()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Superadmin\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\sigap1\\public\\index.php')
+CRITICAL - 2025-07-21 11:34:22 --> ErrorException: Undefined property: stdClass::$judul_order
+[Method: GET, Route: superadmin/orders/completed]
+in APPPATH\Views\superadmin\order\completed.php on line 45.
+ 1 APPPATH\Views\superadmin\order\completed.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$judul_order', 'C:\\xampp\\htdocs\\sigap1\\app\\Views\\superadmin\\order\\completed.php', 45)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sigap1\\app\\Views\\superadmin\\order\\completed.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('superadmin/order/completed', [], true)
+ 5 APPPATH\Controllers\SuperAdmin\OrderController.php(71): view('superadmin/order/completed', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Superadmin\OrderController->completed()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Superadmin\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\sigap1\\public\\index.php')
+CRITICAL - 2025-07-21 11:39:24 --> ErrorException: Undefined property: stdClass::$judul_order
+[Method: GET, Route: user/daftar]
+in APPPATH\Views\satker\Daftar\index.php on line 51.
+ 1 APPPATH\Views\satker\Daftar\index.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$judul_order', 'C:\\xampp\\htdocs\\sigap1\\app\\Views\\satker\\Daftar\\index.php', 51)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\sigap1\\app\\Views\\satker\\Daftar\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('satker/daftar/index', [], true)
+ 5 APPPATH\Controllers\Satker\DaftarController.php(34): view('satker/daftar/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Satker\DaftarController->daftar_orderan()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Satker\DaftarController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\sigap1\\public\\index.php')

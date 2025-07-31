@@ -1,0 +1,394 @@
+ERROR - 2025-07-16 06:44:53 --> mysqli_sql_exception: Column 'kategori' cannot be null in C:\xampp\htdocs\sigap1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\sigap1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\sigap1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\sigap1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\sigap1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\sigap1\vendor\codeigniter4\framework\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\sigap1\vendor\codeigniter4\framework\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\sigap1\vendor\codeigniter4\framework\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\sigap1\app\Controllers\Satker\BuatController.php(47): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\sigap1\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Satker\BuatController->create()
+#9 C:\xampp\htdocs\sigap1\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Satker\BuatController))
+#10 C:\xampp\htdocs\sigap1\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\sigap1\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\sigap1\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\sigap1\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\sigap1\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-07-16 06:44:53 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'kategori' cannot be null
+[Method: POST, Route: user/buat/create]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_order` (`no_order`, `judul_order`, `jenis`, `kategori`, `detail`, `email`, `username`, `tanggal_input`, `file_name`, `file_type`, `file_size`, `file_path`, `tanggal_ubah`) VALUES (:no_order:, :judul_order:, :jenis:, :kategori:, :detail:, :email:, :username:, :tanggal_input:, :file_name:, :file_type:, :file_size:, :file_path:, :tanggal_ubah:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Satker\BuatController.php(47): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Satker\BuatController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Satker\BuatController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\sigap1\\public\\index.php')
+CRITICAL - 2025-07-16 06:44:53 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'kategori' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_order` (`no_order`, `judul_order`, `jenis`, `kategori`, `detail`, `email`, `username`, `tanggal_input`, `file_name`, `file_type`, `file_size`, `file_path`, `tanggal_ubah`) VALUES (\'ORD-1752648293\', \'Permohonan Server, Aplikasi, Calotation dan Domain\', \'Layanan Permohonan\', NULL, \'fwkbdfkjswbd\', \'wayyu@gmail.com\', \'wayu\', \'2025-07-16 06:44:53\', \'1752648293_3224f5a9e3a10dc88dc2.jpg\', \'image/jpeg\', 108063, \'C:\\\\xampp\\\\htdocs\\\\sigap1\\\\writable\\\\uploads/1752648293_3224f5a9e3a10dc88dc2.jpg\', \'2025-07-16 06:44:53\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_order` (`no_order`, `judul_order`, `jenis`, `kategori`, `detail`, `email`, `username`, `tanggal_input`, `file_name`, `file_type`, `file_size`, `file_path`, `tanggal_ubah`) VALUES (\'ORD-1752648293\', \'Permohonan Server, Aplikasi, Calotation dan Domain\', \'Layanan Permohonan\', NULL, \'fwkbdfkjswbd\', \'wayyu@gmail.com\', \'wayu\', \'2025-07-16 06:44:53\', \'1752648293_3224f5a9e3a10dc88dc2.jpg\', \'image/jpeg\', 108063, \'C:\\\\xampp\\\\htdocs\\\\sigap1\\\\writable\\\\uploads/1752648293_3224f5a9e3a10dc88dc2.jpg\', \'2025-07-16 06:44:53\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_order` (`no_order`, `judul_order`, `jenis`, `kategori`, `detail`, `email`, `username`, `tanggal_input`, `file_name`, `file_type`, `file_size`, `file_path`, `tanggal_ubah`) VALUES (:no_order:, :judul_order:, :jenis:, :kategori:, :detail:, :email:, :username:, :tanggal_input:, :file_name:, :file_type:, :file_size:, :file_path:, :tanggal_ubah:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Satker\BuatController.php(47): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Satker\BuatController->create()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Satker\BuatController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\sigap1\\public\\index.php')
+CRITICAL - 2025-07-16 06:44:53 --> [Caused by] mysqli_sql_exception: Column 'kategori' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `tb_order` (`no_order`, `judul_order`, `jenis`, `kategori`, `detail`, `email`, `username`, `tanggal_input`, `file_name`, `file_type`, `file_size`, `file_path`, `tanggal_ubah`) VALUES (\'ORD-1752648293\', \'Permohonan Server, Aplikasi, Calotation dan Domain\', \'Layanan Permohonan\', NULL, \'fwkbdfkjswbd\', \'wayyu@gmail.com\', \'wayu\', \'2025-07-16 06:44:53\', \'1752648293_3224f5a9e3a10dc88dc2.jpg\', \'image/jpeg\', 108063, \'C:\\\\xampp\\\\htdocs\\\\sigap1\\\\writable\\\\uploads/1752648293_3224f5a9e3a10dc88dc2.jpg\', \'2025-07-16 06:44:53\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_order` (`no_order`, `judul_order`, `jenis`, `kategori`, `detail`, `email`, `username`, `tanggal_input`, `file_name`, `file_type`, `file_size`, `file_path`, `tanggal_ubah`) VALUES (\'ORD-1752648293\', \'Permohonan Server, Aplikasi, Calotation dan Domain\', \'Layanan Permohonan\', NULL, \'fwkbdfkjswbd\', \'wayyu@gmail.com\', \'wayu\', \'2025-07-16 06:44:53\', \'1752648293_3224f5a9e3a10dc88dc2.jpg\', \'image/jpeg\', 108063, \'C:\\\\xampp\\\\htdocs\\\\sigap1\\\\writable\\\\uploads/1752648293_3224f5a9e3a10dc88dc2.jpg\', \'2025-07-16 06:44:53\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_order` (`no_order`, `judul_order`, `jenis`, `kategori`, `detail`, `email`, `username`, `tanggal_input`, `file_name`, `file_type`, `file_size`, `file_path`, `tanggal_ubah`) VALUES (\'ORD-1752648293\', \'Permohonan Server, Aplikasi, Calotation dan Domain\', \'Layanan Permohonan\', NULL, \'fwkbdfkjswbd\', \'wayyu@gmail.com\', \'wayu\', \'2025-07-16 06:44:53\', \'1752648293_3224f5a9e3a10dc88dc2.jpg\', \'image/jpeg\', 108063, \'C:\\\\xampp\\\\htdocs\\\\sigap1\\\\writable\\\\uploads/1752648293_3224f5a9e3a10dc88dc2.jpg\', \'2025-07-16 06:44:53\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_order` (`no_order`, `judul_order`, `jenis`, `kategori`, `detail`, `email`, `username`, `tanggal_input`, `file_name`, `file_type`, `file_size`, `file_path`, `tanggal_ubah`) VALUES (:no_order:, :judul_order:, :jenis:, :kategori:, :detail:, :email:, :username:, :tanggal_input:, :file_name:, :file_type:, :file_size:, :file_path:, :tanggal_ubah:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Satker\BuatController.php(47): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Satker\BuatController->create()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Satker\BuatController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\sigap1\\public\\index.php')
+ERROR - 2025-07-16 06:45:37 --> mysqli_sql_exception: Column 'kategori' cannot be null in C:\xampp\htdocs\sigap1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\sigap1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\sigap1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\sigap1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\sigap1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\sigap1\vendor\codeigniter4\framework\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\sigap1\vendor\codeigniter4\framework\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\sigap1\vendor\codeigniter4\framework\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\sigap1\app\Controllers\Satker\BuatController.php(47): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\sigap1\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Satker\BuatController->create()
+#9 C:\xampp\htdocs\sigap1\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Satker\BuatController))
+#10 C:\xampp\htdocs\sigap1\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\sigap1\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\sigap1\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\sigap1\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\sigap1\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-07-16 06:45:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'kategori' cannot be null
+[Method: POST, Route: user/buat/create]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_order` (`no_order`, `judul_order`, `jenis`, `kategori`, `detail`, `email`, `username`, `tanggal_input`, `file_name`, `file_type`, `file_size`, `file_path`, `tanggal_ubah`) VALUES (:no_order:, :judul_order:, :jenis:, :kategori:, :detail:, :email:, :username:, :tanggal_input:, :file_name:, :file_type:, :file_size:, :file_path:, :tanggal_ubah:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Satker\BuatController.php(47): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Satker\BuatController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Satker\BuatController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\sigap1\\public\\index.php')
+CRITICAL - 2025-07-16 06:45:37 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'kategori' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_order` (`no_order`, `judul_order`, `jenis`, `kategori`, `detail`, `email`, `username`, `tanggal_input`, `file_name`, `file_type`, `file_size`, `file_path`, `tanggal_ubah`) VALUES (\'ORD-1752648337\', \'Permohonan Server, Aplikasi, Calotation dan Domain\', \'Layanan Permohonan\', NULL, \'fwkbdfkjswbd\', \'wayyu@gmail.com\', \'wayu\', \'2025-07-16 06:45:37\', \'1752648337_4ce898143fdf6c2d46ba.jpg\', \'image/jpeg\', 108063, \'C:\\\\xampp\\\\htdocs\\\\sigap1\\\\writable\\\\uploads/1752648337_4ce898143fdf6c2d46ba.jpg\', \'2025-07-16 06:45:37\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_order` (`no_order`, `judul_order`, `jenis`, `kategori`, `detail`, `email`, `username`, `tanggal_input`, `file_name`, `file_type`, `file_size`, `file_path`, `tanggal_ubah`) VALUES (\'ORD-1752648337\', \'Permohonan Server, Aplikasi, Calotation dan Domain\', \'Layanan Permohonan\', NULL, \'fwkbdfkjswbd\', \'wayyu@gmail.com\', \'wayu\', \'2025-07-16 06:45:37\', \'1752648337_4ce898143fdf6c2d46ba.jpg\', \'image/jpeg\', 108063, \'C:\\\\xampp\\\\htdocs\\\\sigap1\\\\writable\\\\uploads/1752648337_4ce898143fdf6c2d46ba.jpg\', \'2025-07-16 06:45:37\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_order` (`no_order`, `judul_order`, `jenis`, `kategori`, `detail`, `email`, `username`, `tanggal_input`, `file_name`, `file_type`, `file_size`, `file_path`, `tanggal_ubah`) VALUES (:no_order:, :judul_order:, :jenis:, :kategori:, :detail:, :email:, :username:, :tanggal_input:, :file_name:, :file_type:, :file_size:, :file_path:, :tanggal_ubah:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Satker\BuatController.php(47): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Satker\BuatController->create()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Satker\BuatController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\sigap1\\public\\index.php')
+CRITICAL - 2025-07-16 06:45:37 --> [Caused by] mysqli_sql_exception: Column 'kategori' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `tb_order` (`no_order`, `judul_order`, `jenis`, `kategori`, `detail`, `email`, `username`, `tanggal_input`, `file_name`, `file_type`, `file_size`, `file_path`, `tanggal_ubah`) VALUES (\'ORD-1752648337\', \'Permohonan Server, Aplikasi, Calotation dan Domain\', \'Layanan Permohonan\', NULL, \'fwkbdfkjswbd\', \'wayyu@gmail.com\', \'wayu\', \'2025-07-16 06:45:37\', \'1752648337_4ce898143fdf6c2d46ba.jpg\', \'image/jpeg\', 108063, \'C:\\\\xampp\\\\htdocs\\\\sigap1\\\\writable\\\\uploads/1752648337_4ce898143fdf6c2d46ba.jpg\', \'2025-07-16 06:45:37\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_order` (`no_order`, `judul_order`, `jenis`, `kategori`, `detail`, `email`, `username`, `tanggal_input`, `file_name`, `file_type`, `file_size`, `file_path`, `tanggal_ubah`) VALUES (\'ORD-1752648337\', \'Permohonan Server, Aplikasi, Calotation dan Domain\', \'Layanan Permohonan\', NULL, \'fwkbdfkjswbd\', \'wayyu@gmail.com\', \'wayu\', \'2025-07-16 06:45:37\', \'1752648337_4ce898143fdf6c2d46ba.jpg\', \'image/jpeg\', 108063, \'C:\\\\xampp\\\\htdocs\\\\sigap1\\\\writable\\\\uploads/1752648337_4ce898143fdf6c2d46ba.jpg\', \'2025-07-16 06:45:37\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_order` (`no_order`, `judul_order`, `jenis`, `kategori`, `detail`, `email`, `username`, `tanggal_input`, `file_name`, `file_type`, `file_size`, `file_path`, `tanggal_ubah`) VALUES (\'ORD-1752648337\', \'Permohonan Server, Aplikasi, Calotation dan Domain\', \'Layanan Permohonan\', NULL, \'fwkbdfkjswbd\', \'wayyu@gmail.com\', \'wayu\', \'2025-07-16 06:45:37\', \'1752648337_4ce898143fdf6c2d46ba.jpg\', \'image/jpeg\', 108063, \'C:\\\\xampp\\\\htdocs\\\\sigap1\\\\writable\\\\uploads/1752648337_4ce898143fdf6c2d46ba.jpg\', \'2025-07-16 06:45:37\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_order` (`no_order`, `judul_order`, `jenis`, `kategori`, `detail`, `email`, `username`, `tanggal_input`, `file_name`, `file_type`, `file_size`, `file_path`, `tanggal_ubah`) VALUES (:no_order:, :judul_order:, :jenis:, :kategori:, :detail:, :email:, :username:, :tanggal_input:, :file_name:, :file_type:, :file_size:, :file_path:, :tanggal_ubah:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Satker\BuatController.php(47): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Satker\BuatController->create()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Satker\BuatController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\sigap1\\public\\index.php')
+CRITICAL - 2025-07-16 06:48:37 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: user/daftar]
+in APPPATH\Views\satker\Daftar\orderan.php on line 37.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('satker/daftar/orderan', [], true)
+ 4 APPPATH\Controllers\Satker\DaftarController.php(33): view('satker/daftar/orderan', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Satker\DaftarController->daftar_orderan()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Satker\DaftarController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\sigap1\\public\\index.php')
+CRITICAL - 2025-07-16 06:48:56 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: user/daftar]
+in APPPATH\Views\satker\Daftar\orderan.php on line 37.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('satker/daftar/orderan', [], true)
+ 4 APPPATH\Controllers\Satker\DaftarController.php(33): view('satker/daftar/orderan', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Satker\DaftarController->daftar_orderan()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Satker\DaftarController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\sigap1\\public\\index.php')
+CRITICAL - 2025-07-16 06:48:57 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: user/daftar]
+in APPPATH\Views\satker\Daftar\orderan.php on line 37.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('satker/daftar/orderan', [], true)
+ 4 APPPATH\Controllers\Satker\DaftarController.php(33): view('satker/daftar/orderan', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Satker\DaftarController->daftar_orderan()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Satker\DaftarController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\sigap1\\public\\index.php')
+CRITICAL - 2025-07-16 06:49:03 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: user/daftar]
+in APPPATH\Views\satker\Daftar\orderan.php on line 36.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('satker/daftar/orderan', [], true)
+ 4 APPPATH\Controllers\Satker\DaftarController.php(33): view('satker/daftar/orderan', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Satker\DaftarController->daftar_orderan()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Satker\DaftarController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\sigap1\\public\\index.php')
+CRITICAL - 2025-07-16 06:49:05 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: user/daftar]
+in APPPATH\Views\satker\Daftar\orderan.php on line 36.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('satker/daftar/orderan', [], true)
+ 4 APPPATH\Controllers\Satker\DaftarController.php(33): view('satker/daftar/orderan', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Satker\DaftarController->daftar_orderan()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Satker\DaftarController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\sigap1\\public\\index.php')
+CRITICAL - 2025-07-16 06:52:57 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: user/daftar]
+in APPPATH\Views\satker\Daftar\orderan.php on line 35.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('satker/daftar/orderan', [], true)
+ 4 APPPATH\Controllers\Satker\DaftarController.php(33): view('satker/daftar/orderan', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Satker\DaftarController->daftar_orderan()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Satker\DaftarController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\sigap1\\public\\index.php')
+CRITICAL - 2025-07-16 06:52:59 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: user/daftar]
+in APPPATH\Views\satker\Daftar\orderan.php on line 35.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('satker/daftar/orderan', [], true)
+ 4 APPPATH\Controllers\Satker\DaftarController.php(33): view('satker/daftar/orderan', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Satker\DaftarController->daftar_orderan()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Satker\DaftarController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\sigap1\\public\\index.php')
+CRITICAL - 2025-07-16 06:53:00 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: user/daftar]
+in APPPATH\Views\satker\Daftar\orderan.php on line 35.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('satker/daftar/orderan', [], true)
+ 4 APPPATH\Controllers\Satker\DaftarController.php(33): view('satker/daftar/orderan', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Satker\DaftarController->daftar_orderan()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Satker\DaftarController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\sigap1\\public\\index.php')
+CRITICAL - 2025-07-16 07:05:39 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: user/daftar]
+in APPPATH\Views\satker\Daftar\orderan.php on line 35.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('satker/daftar/orderan', [], true)
+ 4 APPPATH\Controllers\Satker\DaftarController.php(33): view('satker/daftar/orderan', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Satker\DaftarController->daftar_orderan()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Satker\DaftarController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\sigap1\\public\\index.php')
+CRITICAL - 2025-07-16 07:08:52 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: user/daftar]
+in APPPATH\Views\satker\Daftar\index.php on line 34.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('satker/daftar/index', [], true)
+ 4 APPPATH\Controllers\Satker\DaftarController.php(33): view('satker/daftar/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Satker\DaftarController->daftar_orderan()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Satker\DaftarController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\sigap1\\public\\index.php')
+CRITICAL - 2025-07-16 08:07:31 --> ParseError: syntax error, unexpected token "echo", expecting ")"
+[Method: GET, Route: satker/daftar/edit/ORD-1752651802]
+in APPPATH\Config\Routes.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\sigap1\\public\\index.php')
+CRITICAL - 2025-07-16 08:07:36 --> ParseError: syntax error, unexpected token "echo", expecting ")"
+[Method: GET, Route: user/daftar]
+in APPPATH\Config\Routes.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\sigap1\\public\\index.php')
+CRITICAL - 2025-07-16 08:07:38 --> ParseError: syntax error, unexpected token "echo", expecting ")"
+[Method: GET, Route: user/order]
+in APPPATH\Config\Routes.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\sigap1\\public\\index.php')
+CRITICAL - 2025-07-16 08:07:40 --> ParseError: syntax error, unexpected token "echo", expecting ")"
+[Method: GET, Route: user/dashboard]
+in APPPATH\Config\Routes.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\sigap1\\public\\index.php')
+CRITICAL - 2025-07-16 08:07:41 --> ParseError: syntax error, unexpected token "echo", expecting ")"
+[Method: GET, Route: login]
+in APPPATH\Config\Routes.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\sigap1\\public\\index.php')
+CRITICAL - 2025-07-16 08:07:41 --> ParseError: syntax error, unexpected token "echo", expecting ")"
+[Method: GET, Route: superadmin/orders/incoming]
+in APPPATH\Config\Routes.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\sigap1\\public\\index.php')
+CRITICAL - 2025-07-16 08:07:41 --> ParseError: syntax error, unexpected token "echo", expecting ")"
+[Method: GET, Route: superadmin/home]
+in APPPATH\Config\Routes.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\sigap1\\public\\index.php')
+CRITICAL - 2025-07-16 08:07:42 --> ParseError: syntax error, unexpected token "echo", expecting ")"
+[Method: GET, Route: admin/orders]
+in APPPATH\Config\Routes.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\sigap1\\public\\index.php')
+CRITICAL - 2025-07-16 08:07:42 --> ParseError: syntax error, unexpected token "echo", expecting ")"
+[Method: GET, Route: admin/orders/]
+in APPPATH\Config\Routes.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\sigap1\\public\\index.php')
+CRITICAL - 2025-07-16 08:07:42 --> ParseError: syntax error, unexpected token "echo", expecting ")"
+[Method: GET, Route: admin/orders/process]
+in APPPATH\Config\Routes.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\sigap1\\public\\index.php')
+CRITICAL - 2025-07-16 08:35:42 --> ErrorException: Undefined variable $data
+[Method: GET, Route: user/daftar/delete/ORD-1752651443]
+in APPPATH\Controllers\Satker\DaftarController.php on line 121.
+ 1 APPPATH\Controllers\Satker\DaftarController.php(121): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\sigap1\\app\\Controllers\\Satker\\DaftarController.php', 121)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Satker\DaftarController->delete('ORD-1752651443')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Satker\DaftarController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\sigap1\\public\\index.php')
+CRITICAL - 2025-07-16 09:45:14 --> ErrorException: Undefined variable $data
+[Method: POST, Route: user/daftar/update/ORD-1752656351]
+in APPPATH\Controllers\Satker\DaftarController.php on line 73.
+ 1 APPPATH\Controllers\Satker\DaftarController.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\sigap1\\app\\Controllers\\Satker\\DaftarController.php', 73)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Satker\DaftarController->update('ORD-1752656351')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Satker\DaftarController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\sigap1\\public\\index.php')

@@ -1,0 +1,19 @@
+<IfModule authz_core_module>
+    # Izinkan akses ke URL tertentu
+    <Location "/superadmin/user/store">
+        Require all granted
+    </Location>
+
+    # Definisikan aturan akses lainnya jika diperlukan
+    Require all denied
+</IfModule>
+
+<IfModule !authz_core_module>
+    # Izinkan akses ke URL tertentu
+    <Location "/superadmin/user/store">
+        Allow from all
+    </Location>
+
+    # Definisikan aturan akses lainnya jika diperlukan
+    Deny from all
+</IfModule>
